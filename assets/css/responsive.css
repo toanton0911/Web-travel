@@ -1,0 +1,224 @@
+/* hide Navbar on low resolution PC */
+
+@media (max-width: 1300px) {
+    .hide-on-low-PC {
+        display: none;
+    }
+
+    .header__navbar-logo-wrapper {
+        flex: 1;
+    }
+
+    .header__mobile-nav-icon {
+        display: block;
+    }
+
+}
+
+@media (min-width: 1023px) and (max-width: 1300px) {
+    .header__container-styles-item {
+        width: 100%;
+    }
+    
+    .footer__header-email {
+        margin-top: 24px;
+        justify-content:center;
+    }
+}
+
+
+/* Mobile and Tablets */
+
+@media (max-width:1023px) {
+    .hide-on-Tablet-Mobile {
+        display: none;
+    }
+
+    .header__navbar-logo-wrapper {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 48px;
+    }
+
+    .header__navbar {
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .header__navbar-logo {
+        margin: auto;
+    }
+
+    .header__navbar-logo-link {
+        margin: auto;
+        padding-right: 48px;
+    }
+
+    .header__mobile-nav-icon {
+        display: block;
+    }
+
+    .header__container-styles-item {
+        width: 100%;
+        margin: 4px 0;
+    }
+
+    .Holiday__banner-text span {
+        margin-left: 0;
+    }
+
+    .Holiday__banner-view {
+        padding-left: 0;
+        justify-content:center;
+    }
+
+    .NA-beaches-view__img {
+        min-height: 400px;
+        margin-top: 42px
+    }
+
+    .NA-beaches-view__img-times {
+        bottom: 0;
+        left: 8px;
+    }
+
+    .NA-beaches__choices {
+        margin-top: 100px;
+    }
+
+    .NA-beaches-description__header h2::before {
+        display: none;
+    }
+    
+    .NA-beaches-view__selector {
+        top: 70px;
+    }
+
+    .NA-beaches-times-item {
+        
+    }
+
+
+    .NA-beaches__choices-item {
+        margin-top: 24px;
+    }
+
+    .Container__packages-item-img {
+      
+    }
+
+    .Container__packages-item-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .footer__header-text p:nth-child(2) {
+        padding-left:0 ;
+    }
+
+    .footer__header-text p:nth-child(1) {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .footer__header-email {
+        margin-top: 24px;
+        justify-content: center;
+    }
+
+    .footer__body-services-header {
+        font-size: 2rem;
+    }
+
+    .footer__body-item {
+        font-size: 1.8rem;
+        line-height: 1.6;
+        margin: 4px 0;
+    }
+
+    .footer__body-services-item {
+        margin-bottom:30px;
+    }
+}
+
+/* Tablet Only */
+
+@media (min-width: 740px) and (max-width:1023px) {
+    .hide-on-Tablet {
+        display: none
+    }
+
+    .header__container {
+        margin-top: 100px;
+    }
+
+    .container__contents-banner--img {
+        height: 750px;
+    }
+
+    .footer__header-email-text {
+        width: 408px;
+    }
+
+    .footer__container {
+        margin-top: 0;
+    }
+
+    .footer__body-services-header {
+        margin-bottom: 24px;
+    }
+}
+
+/* Mobile Only */
+
+@media (max-width:739px) {
+    .hide-on-Mobile {
+        display: none
+    }
+
+    .mobile-nav__menu {
+        width: 65%;
+    }
+
+    .form-list {
+        width: 90%;
+    }
+
+    .header__container {
+        margin-top: 40px;
+    }
+
+    .header__container-header {
+        margin-bottom: 32px
+    }
+
+    .header__container-header-text-1 {
+        font-size: 2.6rem;
+        font-weight: 700;
+    }
+
+    .header__container-header-text-1 span::after {
+        bottom: 2px;
+    }
+
+    .header__container-selector {
+        margin-bottom: 32px;
+    }
+
+    .NA-beaches-description__header h2 {
+        font-size:3.5rem
+    }
+
+    .NA-beaches-description {
+        padding: 0 24px;
+    }
+
+    .footer__header-email {
+        padding: 0 16px;
+    }
+
+    .footer__header-btn {
+        margin-left: 12px;
+    }
+}

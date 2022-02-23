@@ -1,0 +1,221 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: rgb(153, 153, 153);
+    --header-height: 100%;
+    --header-color: #555555;
+    --header-background-height: 100%;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+    line-height: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.app {
+    height: 100%;
+}
+
+/* Xài chung */
+/* button */
+.btn {
+    display: inline-block;
+    height: 38px;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Header Navbar */
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes FadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.general__has-list:hover .general__navbar-list {
+    display: block;
+}
+
+.general__navbar-list {
+    position: absolute;
+    width: 195px;
+    top: 42px;
+    left: 0;
+    padding-left: 0 ;
+    background-color: var(--white-color);
+    list-style-type: none;
+    border-radius: 2px;
+    box-shadow: 1px 1px 6px var(--white-color);
+    display: none;
+    z-index: 5;
+}
+
+.general__navbar-list::before {
+    position: absolute;
+    top: -26px;
+    left: 12px;
+    content: "";
+    display: block;
+    width: 50%;
+    height: 27px;
+}
+
+.general__navbar-item {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+
+.general__navbar-item:hover {
+    background-color: #f9f9f9;
+}
+
+.general__navbar-item:first-child{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.general__navbar-item:last-child{
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.general__navbar-sublist {
+    position: absolute;
+    left: 113%;
+    top: 0%;
+    background-color: var(--white-color);
+    width: 192px;
+    list-style-type: none;
+    padding-left: 0;
+    border-radius: 1px;
+    box-shadow: 1px 1px 6px var(--white-color);
+    display: none;
+}
+
+.general__has-sublist:hover .general__navbar-sublist {
+    display: block;
+}
+
+.general__navbar-sublist::before {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    content: "";
+    display: block;
+    height: 40%;
+    width: 18%;
+}
+
+.general__navbar-sublist-item {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.general__navbar-sublist-item:hover {
+    background-color: #f9f9f9;
+}
+
+.general__navbar-sublist-item:first-child {
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
+
+.general__navbar-sublist-item:last-child {
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+} 
+
+
+.label {
+    padding: 0px 4px;
+    color: var(--white-color);
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+/* Containter__banner */
+
+.Container__banner {
+    margin-top: 70px;
+}
+
+.Container__banner-item {
+    height: 265px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.Container__banner-item-header p:nth-child(1) {
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Container__banner-item-header p:nth-child(2) {
+    text-align: center;
+    color: var(--white-color);
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin: 28px 0 38px;
+}
+
+.Container__banner-item-btn {
+    background-color: var(--white-color);
+    color: #f6b073;
+    padding: 8px 36px;
+}
