@@ -13,7 +13,7 @@
 
 .header__background {
     box-sizing: inherit;
-    height: 100%;
+    height: 100vh;
     position: relative;
     background-image: url(../img/header-background.jpg);
     background-position: center;
@@ -724,19 +724,19 @@
 }
 
 .relax-img {
-    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/t-relax.png);
+    background-image: url(../img/header-icon-1.png);
 }
 
 .cultural-img {
-    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/t-cultural.png);
+    background-image: url(../img/header-cultural.png);
 }
 
 .sport-img {
-    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/t-sport.png);
+    background-image: url(../img/header-sport.png);
 }
 
 .history-img {
-    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/t-history.png);
+    background-image: url(../img/header-history.png);
 }
 
 
@@ -1089,7 +1089,7 @@
     position: relative;
     height: 100%;
     width: 100%;
-    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/package-3.jpg);
+    background-image: url(../img/NA-beaches-img-0.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
